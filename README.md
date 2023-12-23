@@ -18,5 +18,5 @@
 
 
 <br/>
-![Alt text](/Images/Screenshot_20231223-120154.png?raw=true "I am Mogu!")
+![Alt text](/Images/PXL_20231223_174615690.png?raw=true "I am Mogu!")
 
