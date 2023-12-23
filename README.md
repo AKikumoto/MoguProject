@@ -1,6 +1,6 @@
 # MoguProject（モグ計画）
-Name: Mogu (モグ)
-Day we met: 
-Scientific name: 
-Weight:
-Height:
+Name: Mogu (モグ) <br/>
+Day we met:  <br/>
+Scientific name:  <br/>
+Weight: <br/>
+Height: <br/>
