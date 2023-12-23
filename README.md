@@ -18,8 +18,7 @@
 
 
 <br/><br/>
-<br/><br/>
-![Alt text](/Images/PXL_20231223_174615690.jpg?raw=true "Title")
+![Alt text](/Images/PXL_20231223_174615690.jpg?raw=true, title = "Title")
 
 <br/><br/>
 ![Alt text](/Summary/SampleData.png?raw=true "Title")
