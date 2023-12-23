@@ -14,5 +14,5 @@
 <b>Reference (参照)</b>: https://en.wikipedia.org/wiki/Campbell%27s_dwarf_hamster<br/>
 
 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Alt text](/Images/Screenshot_20231223-120154.png?raw=true "Optional Title")
 
