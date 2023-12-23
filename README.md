@@ -1,6 +1,6 @@
 # MoguPoopProject（モグうんち計測）
-Name（氏名）: Mogu (モグ)<br/>
-Birthday（誕生日）:2022.03?<br/>
+<b>Name（氏名）<b>: Mogu (モグ)<br/>
+<b>Birthday（誕生日）<b>:2022.03?<br/>
 Age (年齢): 1-year and 9 months<br/>
 Age in human（人間換算した年齢）:62-years-old<br/>
 Sex（性別）:female<br/>
