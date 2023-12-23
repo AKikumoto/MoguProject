@@ -12,3 +12,7 @@
 <b>Scientific name（学名）</b>: Campbell's dwarf hamster (Phodopus campbelli) <br/>
 <b>Major habitat（主な生息地）</b>: NorthEast China, Russia, Kazakhstan (中国東北部、ロシア、カザフスタン）<br/>
 <b>Reference (参照)</b>: https://en.wikipedia.org/wiki/Campbell%27s_dwarf_hamster<br/>
+
+
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+
