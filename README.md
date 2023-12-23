@@ -1,4 +1,4 @@
-# MoguProject（モグ計画）
+# MoguPoopProject（モグうんち計測）
 Name: Mogu (モグ)<br/>
 Day we met:<br/>
 Scientific name:<br/>
