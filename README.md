@@ -1,7 +1,7 @@
 # MoguPoopProject（モグ計画）
 
 h1 {
-  font-size: 40px;
+  font-size: 80px;
   <b>Name（氏名）</b>: Mogu (モグ)<br/>
   <b>Birthday（誕生日）</b>: 2022.03?<br/>
   <b>Age (年齢)</b>: 1-year and 9 months<br/>
