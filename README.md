@@ -1,4 +1,4 @@
-# MoguProject（モグ計画）
+# Mogu Project（モグ計画）
 
   <b>Name（氏名）</b>: Mogu (モグ)<br/>
   <b>Birthday（誕生日）</b>: 2022.03?<br/>
