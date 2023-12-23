@@ -24,4 +24,4 @@
 ![Alt text](/Summary/SampleData.png?raw=true "Title")
 
 <br/><br/>
-![Alt text](/Summary/Poop_plot.pdf?raw=true "Title")
+![Alt text](/Summary/Poop_plot.png?raw=true "Title")
