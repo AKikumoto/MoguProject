@@ -1,0 +1,74 @@
+# MoguProject
+# LAST UPDATE: "Sat Dec 23 11:32:42 2023"
+# NOTE:
+# ==============================================================================
+# Removing everything from workspace
+graphics.off()
+rm(list = ls(all = TRUE))
+
+# Load libraries
+library(data.table)
+library(tidyverse)
+library(broom)
+library(RColorBrewer)
+library(scales)
+library(stringr)
+library(psych)
+library(gt)
+library(ggExtra)
+
+# Path
+fsep<-.Platform$file.sep;
+Dir_Main<-path.expand("~/Dropbox/TEMPORARY_HOLDER/Mogu_Project")
+Dir_Data<-file.path(Dir_Main,"RawData")
+
+# Load data
+setwd(Dir_Data)
+ds <- fread("MoguData.csv")
+ds[,date:=as.Date(ds$date,format = "%m/%d/%Y")]
+
+#===============================================================================
+#Statistics
+#===============================================================================
+# Table of raw data
+gt(ds) %>% tab_header(
+  title = "Record of Mogu Pooping") %>% print() 
+
+
+# Descriptive statistics
+describe(ds) %>% gt()
+ave_total_poop <- mean(ds$total_poops) %>% print()
+std_total_poop <- sd(ds$total_poops) %>% round(digits = 1)%>% print()
+sum_total_poop <- ds$total_poops %>% sum() %>% print()
+#===============================================================================
+#Plot
+#===============================================================================
+theme_set(theme_bw(base_size = 16))
+CSCALE_YlGnBu = (brewer.pal(9,"YlGnBu"));
+CSCALE_BLUE = (brewer.pal(9,"Blues"));
+CSCALE_Grey = (brewer.pal(9,"Greys"));
+datebreaks <- seq(as.Date("0023-12-01"), as.Date("0024-12-31"), by = "1 day")
+
+# quartz(width=6,height=4.5) 
+p<-ggplot(data=ds,aes(x=date,y=total_poops,group=1,size=weight_ten_poops)) + 
+  geom_text(aes(ds$date[1],ave_total_poop,label = sprintf("Std.Dev: %s", std_total_poop), vjust = 20, hjust=-.85),size=4)+
+  geom_text(aes(ds$date[1],ave_total_poop,label = sprintf("Average: %s", ave_total_poop), vjust = 18, hjust=-.85),size=4)+
+  geom_text(aes(ds$date[1],ave_total_poop,label = sprintf("Sum: %s", sum_total_poop), vjust = 16, hjust=-.85),size=4)+
+  geom_hline(yintercept = ave_total_poop, linetype=2)+
+  #Main layer-------------------------
+  #geom_errorbar(aes(ymin=total_poops-std_total_poop, ymax=total_poops+std_total_poop),width=.0,size=1)+#,color="black"
+  geom_point(color=CSCALE_YlGnBu[8])+# size=4.5
+  geom_line(color=CSCALE_YlGnBu[8],size=0.75)+
+  #Axis & label-----------------------
+  #scale_x_continuous(breaks=datebreaks)+
+  scale_y_continuous(limits=c(50,110),breaks=seq(0,150,10))+
+  ylab("Total poops (count)")+xlab("Dates of measurements")+
+  theme(panel.border = element_blank(), panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),
+        axis.text.x = element_text(angle = 45, hjust=1),
+        legend.position = "top")
+
+
+ggMarginal(p,groupColour = TRUE, groupFill = TRUE,type = "histogram", margins = "y")
+  
+
