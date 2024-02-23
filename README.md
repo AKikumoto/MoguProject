@@ -1,7 +1,7 @@
 # Mogu Project（モグ計画）
 
 <h8>
-<b>Name（氏名）</b>: Mogu (モグ)<br/>
+<b>Name（氏名）</b>: Mogu (モグ) 女小（もぐ）<br/>
 <b>Birthday（誕生日）</b>: 2022.03?<br/>
 <b>Age (年齢)</b>: 1-year and 9 months<br/>
 <b>Age in human（人間換算した年齢）</b>: 62-years-old<br/>
